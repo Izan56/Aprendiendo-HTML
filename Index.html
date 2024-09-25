@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo HTML</title> <!--entre 55 y 65 letras-->
+    <meta name="description" content="En esta página estamos aprendiendo los fundamentos de HTML">
+    <!--no más de 165 letras-->
+
+    <style>
+      h2 {
+        color: orange;
+      }
+    </style>
+
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+<body>
+    <!--Comentario de ejemplo-->
+    <h2><p>Aprendiendo sobre Diseño Web</p></h2>
+    <p>Hola, este es mi primer documento HTML y donde he apuntado algunos aspectos básicos que me han ayudado a poder completar esta misma página web</p>
+    
+    <small>La línea que esta seguidamente es un:(hr)</small>
+    <hr>
+    <h1>Encabezado de nivel 1 (h1) [solo puede exsistir un solo h1 por documento]</h1>
+    <h2>Encabezado de nivel 2 (h2)</h2>
+    <h3>Encabezado de nivel 3 (h3)</h3>
+    <h4>Encabezado de nivel 4 (h4)</h4>
+    <h5>Encabezado de nivel 5 (h5)</h5>
+    <h6>Encabezado de nivel 6 (h6)</h6>
+
+    <hr>
+    <h2>Etiquetas de texto básicas</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam voluptate voluptatum. Voluptates excepturi dolorem corporis nihil adipisci at inventore sapiente doloremque quibusdam facilis iusto animi iste, vitae perspiciatis doloribus.</p>
+    <p>Palabras en: <b>negrita (b)</b>, <i>cursiva (i)</i>, <u>subrrayado (u)</u>,  E=mc(sup)<sup>2</sup> H(sup)<sup>2</sup>O, <mark>marcar texto (mark)</mark>,  <small>letra pequeña (small)</small></p>
+    <strong>Este texto es importante (strong)</strong>. <em>Este texto tiene énfasis (em)</em>
+    <blockquote>Yo sólo se, que no se nada (blockquote)</blockquote>
+    <cite>Sócrates (cite)</cite>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem beatae adipisci soluta quas, eligendi odio asperiores inventore sint repellendus. Similique modi dicta enim aliquam aspernatur placeat consequuntur voluptatibus quo voluptates?</p>
+    <hr>
+    <h2>Etiquetas de Formateo</h2>
+    <p>
+
+    <small>Esto es un (pre) que sirve para hacer listas</small>
+    <pre>
+    Tareas por Hacer
+    - Terminar el curso
+    - Realizar un ejemplo de página Web
+    - Hacer la página más cómoda a la vista  
+    </pre>
+    <hr>
+    <pre>
+        <code>  
+            Esto es un código (code)
+            Que sirve para
+            hacer estructuras de código
+            junto con (pre)
+        </code>
+    </pre>
+    <hr>
+    <h2>Etiquetas Semánticas Estructurales</h2>
+    <div>- Etiqueta contenedora que no tiene semántica (div)</div>
+    <header>- Cabecera de un sitio web o de una sección (header)</header>
+    <main>
+        - Define la sección principal del documento [solo puede existir una etiqueta (main) por documento]
+    </main>
+    <footer>- Pié de página de un sitio web o de una seción (footer)</footer>
+    <nav>- Representa una navegación (nav)</nav>
+    <article>- Representa una sección de autocontenido [por si sola se explica] (article)</article>
+    <aside>- Representa contenido complementario o secundario (aside)</aside>
+    <section>- Representa una sección de contenido (section)</section>
+    <address>- Representa una dirección (adress)</address>
+    <p>
+    <small>Seguidamente se explica la forma correcta de poner en práctica las anteriores estructuras</small>
+    <hr>
+    <h2>Etiquetas de Bloque vs Etiquetas de Línea</h2>
+    <div>La etiqueta de bloque por excelencia es la (div), genera saltos de línea con sus etiquetas hermanas.</div> <b><div>Hola, soy otro div.</div></b>
+    <span>La etiqueta de línea por excelencia es la (span), sólo ocupa el espacio necesario que tiene su contenido.</span><b><span> Hola, soy otro span.</span></b>
+    <hr>
+    <h2>Estilos CSS en HTML</h2>
+    <h4>¡¡ATENCIÓN!! Estos códigos es mejor ponerlos todos en <u>head</u> o cuando </h4>
+    <div>Utilizando (style) podemos hacer que los carácteres tengan una visualización determinada, <i>¡¡OJO!!</i>, utilizar [<]style[>] y para cerrar [<]/style[>].</div>
+    <div>Un ejemplo de diferente visualización es por ejemplo cambiar el color de sólo los <b>h2</b></div>
+   
+    <code>
+      <pre>
+        &lt;style&gt;
+
+    h2 {
+      color: orange;
+    }
+        &lt;/style&gt;
+      
+      </pre>
+    </code>
+    <div>Después de utilizar este código en el creador de texto/código, podrás notar un cambio en los <b>títulos h2</b>, en esta misma página esta configurado de esta manera.</div>
+    <div>De otra manera, si quermos hacerlo con <i>CSS</i> deberemos hacer un nuevo archivo <b> ______.css</b> y añadir en este archivo un nuevo código, por ejemplo:</div>
+    <code> 
+      <pre>
+      h1 {
+      color: navy;
+      }
+      </pre>
+    </code>
+    <span>De esta manera sólo los títulos <b>h1</b> se cambiaran de color.</span>
+    <span>Perooo, al intentar recargar el HTML verás que no cambia nada de nada, eso es normal, lo que debes hacer es poner el siguiente código para llamar al cambio de color, en este caso el archivo <b>______.css</b> que tengo en mi creador se llama <u>estilos.css</u>  que es donde tengo el anterior código, por lo tanto lo añado entre las "" y así el HTML sabrá que ese archivo tambien existe.</span>
+    <code>
+      <pre>
+          &lt;link rel="stylesheet" href="estilos.css"&gt;
+      </pre>
+    </code>
+          </pre>
+    </code>
+    <div>Si queremos cambiar el tipo de letra de la página HTML lo que debereremos hacer es lo siguiente:
+    <div> Escribir el siguiente código en el archivo <b>_______.css</b> que hemos creado anteriormente para cambiar el color del título <b>h1</b>, que lo que hará es cambiar el estilo de letra de toda la página.</div>
+    <code>
+      <pre>
+      body {
+      font-family: sans-serif;
+      }
+      </pre>
+    </code>
+    <hr>
+    <h2>Scripts en HTML</h2>
+    <span>En este apartado vamos a aprender a crear scripts en un nuevo archivo <i>Java Script</i>, que llevará el nombre de <b>______.js</b>.</span><span> Una vez creado este archivo, deberás añadir el código siguiente en ese archivo:</span>
+    <code>
+      <pre>
+      console.log("¡¡Buenas!! aprendiendo a invocar código Java Script desde HTML")
+      </pre>
+    </code>
+
+    <div>Y en el archivo HTML deberemos añadir el código siguiente:</div>
+    <code>
+      <pre>
+        console.log("¡¡Buenas!! estamos aprendiendo HTML")
+      </pre>
+    </code>
+    <div>De esta manera, al ir a nuestra página web y buscar en inspeccionar (dando click derecho) veremos todo lo que esta añadido en la página web, en ese "menú" si vamos a la sección de <b>consola</b> veremos los scrips que hemos añadido si todo a salido bien</div>
+    <hr>
+    <h2>Imágenes en HTML</h2>
+      <img src="" alt="Tabla Periódica de los Elementos HTML">
+    <script>
+      console.log("¡¡Buenas!! estamos aprendiendo HTML")
+    </script>
+    <script src="códigos.js "></script>
+</body>
+</html>
